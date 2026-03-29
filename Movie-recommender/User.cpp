@@ -7,11 +7,12 @@ User::User(int id, const std::string& name, const std::string& email)
     : id_(id), name_(name), email_(email) {}
 
 const void User::Display() const {
-  std::cout << "ID: " << id_ 
-            << "\tName: " << name_
+  std::cout << "User   - ID: " << id_ 
+            << "\t\tName: " << name_
             << "\tEmail: " << email_ << std::endl;
 }
 
+// getter functions
 int User::id() const {
   return id_;
 }

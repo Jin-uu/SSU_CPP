@@ -13,11 +13,12 @@ Rating::Rating(int user_id, int movie_id, double score)
     }
 
 void Rating::Display() const {
-  std::cout << "User ID: " << user_id_
+  std::cout << "Rating - User ID: " << user_id_
             << "\tMovie ID: " << movie_id_
             << "\tScore: " << score_ << std::endl;
 }
 
+// getter functions
 int Rating::user_id() const {
   return user_id_;
 }

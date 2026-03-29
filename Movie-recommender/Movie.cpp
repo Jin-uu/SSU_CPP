@@ -26,10 +26,11 @@ void Movie::AddRating(double r) {
 }
 
 void Movie::Display() const {
-  std::cout << id_ << ". " << title_
+  std::cout << "Movie - ID: "
+            << id_ << ". " << title_
             << "(" << released_year_ << ")"
-            << "\t평점: " << GetAverageRating()
-            << "(" << rating_count_ << "건)"
+            << "\t\t평점: " << GetAverageRating()
+            << " (" << rating_count_ << "건)"
             << std::endl;
 }
 
